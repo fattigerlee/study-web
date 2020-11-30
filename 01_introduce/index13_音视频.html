@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>音视频学习</title>
+    </head>
+    <body>
+        <!-- 
+            audio: 向页面中引入一个外部的音频
+                音频文件引入时,默认不允许用户控制音频的播放停止
+            
+            属性:
+                controls: 是否允许用户控制播放
+                autoplay: 是否自动播放(不好用)
+                    如果设置autoplay,则音乐会自动播放,但是大部分浏览器都不会对音乐自动播放
+                loop: 是否循环播放
+
+            <audio src="../resource/audio/audio.mp3" controls autoplay loop></audio>
+        -->
+
+        <!-- 处理浏览器兼容问题,比较好的写法 -->
+        <audio controls>
+            对不起,您的浏览器不支持播放音频!请升级浏览器!
+            <source src="../resource/audio/audio.ogg" />
+            <source src="../resource/audio/audio.mp3" />
+
+            <!-- 
+                兼容老版本浏览器写法,此时可以删除提示文字
+                <embed src="../resource/audio/audio.mp3" type="audio/mp3" />
+            -->
+        </audio>
+
+        <!-- 
+            video: 想页面中引入一个外部的视频文件,使用方式和audio基本上是一样的
+
+            <video src="../resource/audio/flower.mp4" controls autoplay loop></video>
+        -->
+        <video controls>
+            对不起,您的浏览器不支持播放视频!请升级浏览器!
+            <source src="../resource/audio/flower.webm" type="" />
+            <source src="../resource/audio/flower.mp4" type="" />
+
+            <!-- 
+                兼容老版本浏览器写法,此时可以删除提示文字
+                <embed src="../resource/audio/flower.mp4" type="flower/mp4" />
+            -->
+        </video>
+
+        <video controls>
+            <source src="https://v.qq.com/x/page/d3206vwkxgr.html" type="" />
+        </video>
+
+        <!-- 引入第三方的视频 -->
+        <!-- <iframe src="https://v.qq.com/x/page/d3206vwkxgr.html" width="600" height="400" allowfullscreen="true"> </iframe> -->
+
+        <iframe
+            src="//player.bilibili.com/player.html?aid=77217003&bvid=BV1XJ411X7Ud&cid=132017557&page=26"
+            scrolling="no"
+            frameborder="no"
+            framespacing="0"
+            allowfullscreen="true"
+        >
+        </iframe>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>超链接学习</title>
+    </head>
+    <body>
+        <!-- 
+            使用a标签定义超链接,超链接是行内元素,但是内部可以嵌套除它自身外的任何元素
+            属性
+                href: 指定跳转的目标路径
+                    可以是外部网站的地址
+                    可以是内部页面的地址
+                    可以是页面中的某个位置
+                target: 指定超链接打开的位置
+                    _self: 默认值,当前页面打开
+                    _blank: 在新的页面中打开
+                id: 每一个标签都可以添加id属性,是元素的唯一标识,同一个页面中不能出现重复的id属性,必须字母开头
+
+        -->
+        <a href="https://www.baidu.com">跳转到百度</a>
+        <br /><br />
+        <a href="index.html">跳转到内部index页面</a>
+        <br /><br />
+        <a href="index.html" target="_blank">跳转到内部index页面,新页面中打开</a>
+        <br /><br />
+
+        <a href="#bottom">去底部</a>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <a id="bottom" href="#">回到顶部</a>
+
+        <br /><br />
+
+        <a href="javascript:;">点击后什么也不会发生,作为超链接占位符</a>
+    </body>
+</html>

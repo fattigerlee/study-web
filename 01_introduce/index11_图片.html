@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>图片学习</title>
+    </head>
+    <body>
+        <!-- 
+            img是自结束标签,属于替换元素,介于块元素和行内元素之间
+            属性
+                src: 外部图片的路径,可以用相对路径引入内部图片或者用图片地址引入外部图片
+                alt: 图片的描述,会在图片无法加载时显示,搜索引擎主要根据这个属性来识别图片内容
+                width: 图片宽度
+                height: 图片高度
+                
+            注意:
+                如果只修改一个宽高属性,另一个宽高属性会等比例缩放
+                一般情况下PC端不建议修改图片大小,需要多大的图片就裁多大
+                但是移动端,经常需要对图片进行缩放(大图缩小,手机分辨率问题)
+
+            图片的格式:
+                jpeg(jpg): 支持的颜色比较丰富,不支持透明效果,不支持动图(一般用于显示照片)
+                gif: 支持的颜色比较少,支持简单透明,支持动图(用于颜色单一的图片,动图)
+                png: 支持的颜色比较丰富,支持复杂透明,不支持动图(专为网页而生)
+                webp: 谷歌推出的图片格式,兼具了上面所有图片类型的优点,缺点是兼容性不好,老的浏览器不支持
+                base64: 将图片进行base64编码,可以直接将二进制数据写入src中显示图片(使用场景少)
+        -->
+        <img src="../resource/image/1.gif" alt="" />
+        <img src="../resource/image/2.gif" alt="" />
+        <img src="../resource/image/3.jpg" alt="海贼王" width="200" />
+    </body>
+</html>

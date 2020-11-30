@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>选择器权重学习</title>
+
+        <style>
+            div {
+                color: yellow;
+                font-size: 20px;
+            }
+
+            .color {
+                color: red;
+            }
+
+            #box1 {
+                color: orange;
+            }
+
+            /* 通配选择器设置大小为50px,比继承的样式20px优先级高 */
+            * {
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            样式冲突
+                通过不同选择器选中相同元素,并且设置同一个属性
+            
+            选择器的权重
+                内联样式,行内样式 > id选择器 > 类和伪类选择器 > 元素选择器 > 通配选择器 > 继承的样式
+            
+            注意
+                分组选择器单独计算
+                如果优先级相同,此时优先使用靠下的样式
+                可以在某个样式的后面加上 !important,此时这个样式的优先级最高(在开发中不使用)
+                div {
+                    color: yellow;
+                    font-size: 20px !important;
+                }
+        -->
+        <div id="box1" class="color">
+            我是一个div
+            <span>我是div里面的span</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>关系选择器学习</title>
+
+        <style>
+            /* div > span {
+                color: red;
+            } */
+
+            div span:nth-child(3) {
+                color: blue;
+            }
+
+            /* p + span {
+                color: yellow;
+            } */
+
+            /* p ~ span {
+                font-size: 20px;
+            } */
+        </style>
+    </head>
+    <body>
+        <!-- 
+            1 div的子元素span设置字体颜色红色(子标签选择器)
+            div > span {
+                color: red;
+            }
+
+
+            2 div的所有span设置为蓝色(后代选择器)
+            div span {
+                color: blue;
+            }
+
+
+            3 p下面的一个span设置为黄色(兄弟选择器)
+            p + span {
+                color: yellow;
+            }
+
+            p下面的所有span设置为20px
+            p ~ span {
+                font-size: 20px;
+            }
+        -->
+
+        <div>
+            我是div标签
+
+            <p>我是div标签中的p标签<span>我是p标签中的span标签</span></p>
+
+            <span>我是div标签中的span1标签</span>
+            <span>我是div标签中的span2标签</span>
+            <span>我是div标签中的span3标签</span>
+            <span>我是div标签中的span4标签</span>
+        </div>
+
+        <div class="table">
+            <span>111</span>
+            <span>222</span>
+            <span>333</span>
+        </div>
+    </body>
+</html>

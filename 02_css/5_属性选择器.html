@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>属性选择器学习</title>
+
+        <style>
+            p[title] {
+                color: red;
+            }
+
+            p[title='aaa'] {
+                color: green;
+            }
+
+            p[title^='abc'] {
+                color: yellow;
+            }
+
+            p[title$='efg'] {
+                color: blue;
+            }
+
+            p[title*='t'] {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            1 选择某种属性
+            p[title] {
+                color: red;
+            }
+
+
+            2 选择属性值为aaa
+            p[title='aaa'] {
+                color: green;
+            }
+
+
+            3 选择属性值以abc开头
+            p[title^='abc'] {
+                color: yellow;
+            }
+
+
+            4 选择属性值以efg结尾
+            p[title$='efg'] {
+                color: blue;
+            }
+
+
+            5 选择含有字母t
+            p[title*='t'] {
+                font-size: 20px;
+            }
+        -->
+
+        <h1 title="aaa">回乡偶书(二首)</h1>
+        <p title="abc">少小离家老大回</p>
+        <p title="abcde">乡音无改鬓毛衰</p>
+        <p title="abcdefg">儿童相见不相识</p>
+        <p title="tabccc">笑问客从何处来</p>
+    </body>
+</html>

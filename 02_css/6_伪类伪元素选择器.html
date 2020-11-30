@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>伪类伪元素选择器学习</title>
+
+        <style>
+            /* ul > li:first-child {
+                color: red;
+            } */
+
+            /* ul > li:last-child {
+                color: green;
+            } */
+
+            /* ul > li:nth-child(1) {
+                color: yellow;
+            } */
+
+            /* ul > li:first-of-type {
+                color: red;
+            } */
+
+            /* 否定伪类使用 */
+            /* ul > li:not(:nth-child(3)) {
+                color: red;
+            } */
+
+            p::first-letter {
+                font-size: 20px;
+            }
+
+            p::first-line {
+                background-color: red;
+            }
+
+            p::selection {
+                color: yellow;
+            }
+
+            div::before {
+                content: '***';
+            }
+
+            div::after {
+                content: '***';
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            伪类选择器
+
+            1 设置第一个标签为红色
+            ul > li:first-child {
+                color: red;
+            }
+
+
+            2 设置最后一个标签为绿色
+            ul > li:last-child {
+                color: green;
+            }      
+            
+            
+            3 设置第三个标签为黄色
+            ul > li:nth-child(3) {
+                color: yellow;
+            }
+            
+            n的值:
+                n: 0到正无穷
+                odd: 奇数
+                even: 偶数
+
+            ul > li:nth-child(1) {
+                color: yellow;
+            }            
+
+            ul > li:nth-child(odd) {
+                color: yellow;
+            }            
+
+            ul > li:nth-child(even) {
+                color: yellow;
+            }
+            
+            以上这些伪类都是根据所有元素排序的
+
+            根据同类型排序
+            ul > li:first-of-type {
+                color: red;
+            }
+            
+            5 否定伪类,除了第三个,其他都为红色
+            ul > li:not(:nth-child(3)) {
+                color: red;
+            }            
+        -->
+
+        <ul>
+            <li>第一个</li>
+            <li>第二个</li>
+            <li>第三个</li>
+            <li>第四个</li>
+            <li>第五个</li>
+        </ul>
+
+        <!-- 
+            超链接伪类
+
+            1 未访问链接(link,超链接独有)
+            a:link {
+                color: red;
+            }            
+
+            2 已访问链接(visited,超链接独有)
+                由于隐私原因,visited伪类只能修改链接颜色(一般不使用)
+            a:visited {
+                color: orange;
+            }            
+
+            3 鼠标悬停伪类(hover)
+
+            4 鼠标点击伪类(active)
+        -->
+
+        <a href="https://www.baidu.com">百度</a>
+        <br /><br />
+        <a href="https://www.baidu.com">百度</a>
+        <br /><br />
+
+        <!-- 
+            伪标签选择器
+
+            1 第一个字母
+            p::first-letter {
+                font-size: 20px;
+            }
+            
+            
+            2 第一行
+            p::first-line {
+                background-color: red;
+            }
+            
+            
+            3 选中的内容
+            p::selection {
+                color: yellow;
+            }    
+            
+            
+            4 标签内容的开头添加(经常使用)
+            div::before {
+                content: '***';
+            }
+
+            5 标签内容的结束添加(经常使用)
+            div::after {
+                content: '***';
+            }
+        -->
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum cumque architecto, eligendi eaque voluptatibus ullam fugit saepe
+            necessitatibus? Aut dolor voluptas voluptatibus natus dignissimos explicabo, possimus doloremque laudantium molestiae.
+        </p>
+
+        <div>Hello Hello Hello</div>
+    </body>
+</html>

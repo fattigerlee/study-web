@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>常用选择器学习</title>
+
+        <style>
+            h1 {
+                color: red;
+            }
+
+            p {
+                color: red;
+            }
+
+            #green {
+                color: green;
+            }
+
+            .yellow {
+                color: yellow;
+            }
+
+            .blue {
+                color: blue;
+            }
+
+            * {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            1 所有段落设置为红色(标签选择器)
+            h1 {
+                color: red;
+            }
+
+            p {
+                color: red;
+            }
+
+
+            2 指定单个段落为绿色(id选择器,id不能重复)
+            #red {
+                color: green;
+            }
+
+
+            3 指定多个段落为黄色(class选择器,class可以重复)
+            .yellow {
+                color: yellow;
+            }
+
+            一个标签可以指定多个class,使用空格隔开
+
+            
+            4 选中页面中的所有标签(通配选择器)
+            * {
+                font-size: 20px;
+            }
+        -->
+
+        <h1>回乡偶书(二首)</h1>
+        <p id="green">少小离家老大回</p>
+        <p class="yellow">乡音无改鬓毛衰</p>
+        <p class="yellow">儿童相见不相识</p>
+        <p class="yellow blue">笑问客从何处来</p>
+    </body>
+</html>

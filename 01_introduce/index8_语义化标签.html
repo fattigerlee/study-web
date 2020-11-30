@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>语义化标签学习</title>
+    </head>
+    <body>
+        <!--
+        使用HTML标签时,重点关注标签的语义而不是样式
+
+        标题标签:
+            h1 - h6     
+            h1标签仅次于title,一般情况下页面中只会有一个h1标签
+
+        段落标签:
+            p
+
+        em标签:
+            用于表示语音语调加重
+    -->
+
+        <p>今天天气<i>真</i>不错</p>
+        <p>今天你必须要<b>完成作业</b></p>
+
+        <!-- 长引用 -->
+        鲁迅说:
+        <blockquote>我没说过!</blockquote>
+
+        <!-- 短引用,自动加双引号 -->
+        子曰: <q>哈哈哈</q>
+
+        <!-- 换行 -->
+        <br />
+
+        <!-- 
+        块元素(block element):
+            在页面中独占一行的元素称为块元素,h1,p
+            作用: 进行网页布局
+
+        行内元素(inline element):
+            在页面中不会独占一行的元素,i(斜体),b(粗体)
+            作用: 包裹文字
+
+        注意事项
+            一般情况下会在块元素中嵌套行内元素,而不会在行内元素中嵌套块元素
+            p元素中不能嵌套任何的块元素
+            浏览器在解析网页时,会自动对网页中不规范的内容进行修正,不会修正网页源代码,但加载在内存中的网页数据已经发生变化
+    -->
+
+        <!-- 
+        下面这些标签是h5新增的标签,项目中使用的都不是很多
+
+        header: 网页的头部
+        main: 网页的主体(一个页面中只会有一个main)
+        footer: 网页的底部
+        nav: 网页的导航
+        aside: 和主体相关的其他内容,如侧边栏
+        article: 一个独立的文章
+        section: 一个独立的区块,上面的标签都无法表示时,使用此标签
+
+        目前主要使用的布局元素是div,div可以代替上面的所有标签
+
+        div: 没有语义,表示一个区块
+        span: 行内元素,没有语义,一般用于网页中选中文字
+    -->
+        <header></header>
+        <main></main>
+        <footer></footer>
+
+        <nav></nav>
+        <aside></aside>
+        <article></article>
+
+        <section></section>
+
+        <div></div>
+    </body>
+</html>

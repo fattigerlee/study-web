@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>复合选择器学习</title>
+
+        <style>
+            .red {
+                color: red;
+            }
+
+            div.red2.red3 {
+                font-size: 30px;
+            }
+
+            .red2.red4 {
+                font-size: 50px;
+            }
+
+            h1,
+            span,
+            .green {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            1 将class为red的标签设置为红色(class选择器)
+            .red {
+                color: red;
+            }
+
+
+            2 将class为red2和red3的div大小设置为30px(交集选择器,如果有标签,必须以标签开头)
+            div.red2.red3 {
+                font-size: 30px;
+            }
+
+            将class为red2和red4的标签设置为50px
+            .red2.red4 {
+                font-size: 50px;
+            }
+
+
+            3 将h1,span和class为green的标签设置为绿色(并集选择器)
+            h1,
+            span,
+            .green {
+                color: green;
+            }
+        -->
+
+        <div class="red">我是div标签</div>
+
+        <div class="red2 red3">我是div2标签</div>
+
+        <p class="red2 red4">我是p标签</p>
+
+        <h1>标题</h1>
+
+        <span>哈哈哈</span>
+
+        <p class="green">嘿嘿嘿</p>
+    </body>
+</html>
