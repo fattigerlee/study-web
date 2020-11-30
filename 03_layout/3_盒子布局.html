@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>盒子布局学习</title>
+
+        <style>
+            #outer {
+                width: 800px;
+                height: 200px;
+                border: 10px red solid;
+            }
+
+            #inner {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+            }
+
+            #outer2 {
+                width: 800px;
+                height: 200px;
+                border: 10px red solid;
+            }
+
+            #inner2 {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                margin: 0 auto;
+            }
+
+            #outer3 {
+                background-color: green;
+            }
+
+            .inner3 {
+                width: 100px;
+                height: 200px;
+                background-color: black;
+                margin-bottom: 100px;
+            }
+
+            #box1 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                overflow: auto;
+            }
+
+            #box2 {
+                width: 100px;
+                height: 400px;
+                background-color: yellow;
+            }
+
+            #box3,
+            #box4 {
+                width: 200px;
+                height: 200px;
+            }
+
+            #box3 {
+                background-color: green;
+                margin-bottom: -100px;
+            }
+
+            #box4 {
+                background-color: yellow;
+                margin-top: 100px;
+            }
+
+            #box5 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+
+            #box6 {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            水平方向布局
+                outer元素的内容区大小 = inner margin*2 + border*2 + padding *2 + width
+                例子,在父元素当中水平居中
+                    margin: 0 auto;
+
+            垂直方向布局
+                默认情况下,父元素的高度被内容撑开
+                使用overflow处理父元素中子元素溢出问题
+                    visible: 默认值,从父元素溢出
+                    hidden: 溢出的内容会被隐藏
+                    scroll: 生成滚动条,生成垂直水平双方向滚动条,查看完整内容
+                    auto: 根据需要生成滚动条
+                overflow-x: 处理水平方向溢出
+                overflow-y: 处理垂直方向溢出
+            
+            垂直外边距的重叠
+                兄弟元素间的相邻垂直外边距
+                    都为正值: 外边距以较大值为准
+                    一正一负: 外边距为两者的和
+                    都为负值: 外边距以绝对值较大为准
+                父子元素间的相邻垂直外边距,子元素会传递给父元素
+
+
+        -->
+        <div id="outer">
+            <div id="inner"></div>
+        </div>
+
+        <div id="outer2">
+            <div id="inner2"></div>
+        </div>
+
+        <div id="outer3">
+            <div class="inner3"></div>
+            <div class="inner3"></div>
+        </div>
+
+        <div id="box1">
+            <div id="box2"></div>
+        </div>
+
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+
+        <br /><br />
+
+        <div id="box5">
+            <div id="box6">box6</div>
+        </div>
+    </body>
+</html>

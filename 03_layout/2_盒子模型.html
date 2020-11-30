@@ -47,6 +47,27 @@
                 background-color: blue;
                 margin: 100px;
             }
+
+            a {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                visibility: hidden;
+            }
+
+            .s1 {
+                background-color: yellow;
+                padding: 100px;
+                border: 100px;
+                margin: 100px;
+            }
+
+            .box1 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
         </style>
     </head>
     <body>
@@ -102,6 +123,22 @@
 
             盒子大小计算
                 盒子宽度 = 内容区宽度 + 内边距宽度 * 2 + 边块宽度 * 2
+
+            行内元素盒子模型
+                行内元素不支持设置width和height,宽高由内容大小决定
+                行内元素padding,border,margin不会影响垂直方向页面布局
+            
+            display
+                用于设置元素显示的类型
+                inline: 设置为行内元素
+                block: 设置为块元素
+                inline-block: 设置为行内块元素(使用较少)
+                table: 设置为表格
+                none: 不在页面中显示,用于隐藏元素
+            visibility
+                visable: 默认值,元素在页面中正常显示
+                hidden: 元素在页面中隐藏,但是依然占据页面位置
+
         -->
         <div id="box1">div1</div>
 
@@ -114,5 +151,12 @@
         </div>
 
         <div id="box5">div5</div>
+
+        <a href="">超链接</a>
+
+        <span class="s1">我是span1</span>
+        <span class="s1">我是span2</span>
+
+        <div class="box1"></div>
     </body>
 </html>
