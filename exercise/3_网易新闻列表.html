@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>网易新闻列表</title>
+        <link rel="stylesheet" href="../style/reset.css" />
+        <style>
+            body {
+                background-color: #f4f4f4;
+            }
+
+            /* 设置容器样式 */
+            .sports {
+                width: 300px;
+                height: 324px;
+                margin-top: 27px;
+                background-color: #fefefe;
+            }
+
+            .sports a {
+                /* 统一去除超链接下划线 */
+                text-decoration: none;
+            }
+
+            .sports_title {
+                /* 设置高度 */
+                height: 41px;
+                line-height: 18px;
+                /* 设置上边块,实线 */
+                border-top: 1px #dddddd solid;
+            }
+
+            .sports_title h2 {
+                /* 为了使上边块的大小与块元素中文字大小长度相同,需要将块元素转换为行内块元素 */
+                display: inline-block;
+                /* 设置上边块,实线 红色 */
+                border-top: 1px #f34540 solid;
+                /* 将h2的上边块与sports_title的上边框重合,需要将h2外边距上移1px */
+                margin-top: -1px;
+                /* 设置上内边距 */
+                padding-top: 6px;
+                /* 设置下内边距 */
+                padding-bottom: 10px;
+            }
+
+            .sports_title a {
+                /* 超链接需要设置字体颜色,否则会显示成默认的字体颜色 */
+                color: #404040;
+                /* 设置字体大小 */
+                font-size: 16px;
+                /* 设置字体加粗 */
+                font-weight: bold;
+            }
+
+            .sports_image {
+                width: 100%;
+                height: 150px;
+            }
+
+            .sports_image h3 {
+                /* 文字垂直居中显示,height和line-height值相同 */
+                height: 40px;
+                line-height: 40px;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: -40px;
+                padding-left: 20px;
+            }
+
+            .sports_list {
+                margin-top: 12px;
+            }
+
+            .sports_list li {
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                font-size: 14px;
+            }
+
+            /* 在文字前加上一个小方块 */
+            .sports_list li:before {
+                content: '';
+                width: 4px;
+                height: 4px;
+                line-height: 4px;
+                background: #dddddd;
+                /* 设置为行内块元素 */
+                display: inline-block;
+                /* 使行内块元素垂直居中,vertical-align只能使行内元素垂直居中 */
+                vertical-align: middle;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+
+            .sports_list a {
+                color: #666666;
+            }
+
+            /* 超链接鼠标停留时效果 */
+            .sports_title a:hover,
+            .sports_list a:hover {
+                color: #c81623;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sports">
+            <div class="sports_title">
+                <h2>
+                    <a href="#">体育</a>
+                </h2>
+            </div>
+            <div class="sports_image">
+                <a href="#">
+                    <img src="../resource/image/exercise/3_1.jpeg" alt="" />
+                    <h3>费德勒首负迪米 扶额头不满发挥</h3>
+                </a>
+            </div>
+            <div class="sports_list">
+                <ul>
+                    <li>
+                        <a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a>
+                    </li>
+                    <li>
+                        <a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a>
+                    </li>
+                    <li>
+                        <a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a>
+                    </li>
+                    <li>
+                        <a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
