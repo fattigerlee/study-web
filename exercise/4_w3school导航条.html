@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>w3school导航条</title>
+        <link rel="stylesheet" href="../style/reset.css" />
+        <style>
+            .menu {
+                width: 1205px;
+                height: 48px;
+                background-color: #e8e7e3;
+
+                /* 水平居中 */
+                margin: 100px auto;
+            }
+
+            .menu li {
+                /* 设置li向左浮动,使菜单栏横向排列 */
+                float: left;
+
+                /* li是块元素,如果不设置高度,那么默认高度被内容撑开,就会与实际效果不符 */
+                /* 将文字在父元素中垂直居中,height高度可以省略不写 */
+                line-height: 48px;
+            }
+
+            .menu a {
+                /* a是行内元素,需要转换为块元素,因为超链接效果不仅仅只针对文字,点击文字旁边的框时,同样可以触发超链接效果 */
+                /* 此时不用设置行高,因为a元素是li元素的子元素,继承line-height属性 */
+                display: block;
+                /* 去除下划线 */
+                text-decoration: none;
+                /* 设置超链接文字颜色 */
+                color: #777777;
+                /* 设置文字大小 */
+                font-size: 18px;
+                /* 设置内边距 */
+                padding: 0 39px;
+            }
+
+            .menu a:hover {
+                background-color: #3f3f3f;
+                color: #e8e7e3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="#">HTML/CSS</a>
+                </li>
+                <li>
+                    <a href="#">Browser Side</a>
+                </li>
+                <li>
+                    <a href="#">Server Side</a>
+                </li>
+                <li>
+                    <a href="#">Programming</a>
+                </li>
+                <li>
+                    <a href="#">XML</a>
+                </li>
+                <li>
+                    <a href="#">Web Building</a>
+                </li>
+                <li>
+                    <a href="#">Reference</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

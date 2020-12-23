@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>浮动的其他特点</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box1 {
+                width: 100px;
+                height: 100px;
+                background-color: #bbffaa;
+            }
+
+            .box2 {
+                background-color: yellowgreen;
+                float: left;
+            }
+
+            .box3 {
+                background-color: orange;
+            }
+
+            .s1 {
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            浮动元素不会盖住文字,文字会自动环绕在浮动元素周围
+        -->
+        <div class="box1"></div>
+        <p>哈哈哈</p>
+
+        <!-- 
+            元素设置浮动后,将会从文档流中脱离,元素的特点也会发生变化
+
+            脱离文档流特点
+                块元素
+                    1 不再独占一行
+                    2 块元素宽度和高度被内容撑开
+
+                行内元素
+                    脱离文档流后变成块元素
+        -->
+        <div class="box2">hello</div>
+        <div class="box3">hello</div>
+
+        <span class="s1">hello world</span>
+    </body>
+</html>

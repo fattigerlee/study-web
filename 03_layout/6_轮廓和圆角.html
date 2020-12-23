@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>轮廓和圆角</title>
+        <style>
+            .box1 {
+                width: 200px;
+                height: 200px;
+                background-color: #bbffaa;
+            }
+
+            .box1:hover {
+                outline: 10px red solid;
+            }
+
+            .box2 {
+                width: 200px;
+                height: 200px;
+                background-color: #bbffaa;
+                box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+            }
+
+            .box3 {
+                width: 200px;
+                height: 200px;
+                background-color: #bbffaa;
+                border-top-left-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            轮廓:
+                outline: 用于设置元素的轮廓线,用法和border一样
+                outline不会影响页面布局,border会影响页面布局
+
+            阴影:
+                box-shadow: 用于设置元素的阴影效果,不会影响页面布局
+                阴影位于元素的正下方,跟元素一样大
+                box-shadow参数:
+                    第一个值: 水平偏移量 正 -> 向右移动 负 -> 向左移动
+                    第二个值: 垂直偏移量 正 -> 向下移动 负 -> 向上移动
+                    第三个值: 模糊半径
+                    第四个值: 阴影颜色
+
+            圆角:
+                设置的是圆的半径大小
+                border-radius:
+                    所有角指定相同的值
+                    border-radius: 50px
+
+                    分别指定四个角的圆角,顺时针 左上, 右上, 右下, 左下
+                    border-radius: 10px 20px 30px 40px
+
+                    设置一个圆形
+                    border-radius: 50%
+                border-top-left-radius: 左上角
+                border-top-right-radius: 右上角
+                border-bottom-left-radius: 左下角
+                border-bottom-right-radius: 右下角
+
+
+        -->
+        <div class="box1"></div>
+        <span>hello</span>
+
+        <div class="box2"></div>
+        <span>hello</span>
+
+        <div class="box3"></div>
+    </body>
+</html>
