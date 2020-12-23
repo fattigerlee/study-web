@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>网页的布局</title>
+        <style>
+            header,
+            main,
+            footer {
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            nav,
+            article,
+            aside {
+                height: 100%;
+                /* 默认垂直排列,如果要水平排列,设置浮动 */
+                float: left;
+            }
+
+            header {
+                height: 150px;
+                background-color: red;
+            }
+
+            main {
+                height: 500px;
+                background-color: yellow;
+                margin: 10px auto;
+            }
+
+            nav {
+                width: 200px;
+                background-color: red;
+            }
+
+            article {
+                width: 580px;
+                background-color: black;
+                margin: 0px 10px;
+            }
+
+            aside {
+                width: 200px;
+                background-color: green;
+            }
+
+            footer {
+                height: 150px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 网页头部 -->
+        <header></header>
+
+        <!-- 网页主题 -->
+        <main>
+            <!-- 左侧导航 -->
+            <nav></nav>
+
+            <!-- 内容 -->
+            <article></article>
+
+            <!-- 边栏 -->
+            <aside></aside>
+        </main>
+
+        <!-- 网页底部 -->
+        <footer></footer>
+    </body>
+</html>
